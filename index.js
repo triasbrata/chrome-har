@@ -152,7 +152,7 @@ module.exports = {
               __frameId: params.frameId,
               _initialPriority: request.initialPriority,
               _priority: request.initialPriority,
-              _resourceType: request,
+              _resourceType: params.type ? params.type.toLocaleLowerCase() : 'other',
               pageref: currentPageId,
               request: req,
               time: 0,
