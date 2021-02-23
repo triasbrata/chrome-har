@@ -152,6 +152,7 @@ module.exports = {
               __frameId: params.frameId,
               _initialPriority: request.initialPriority,
               _priority: request.initialPriority,
+              _resourceType: request,
               pageref: currentPageId,
               request: req,
               time: 0,
